@@ -1,0 +1,15 @@
+{
+  "name": "mike-portfolio",
+  "version": "0.0.1",
+  "description": "Michael Wood's portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Wood",
+  "private": true,
+  "devDependencies": {
+    "bower": "^1.3.4",
+    "gulp": "^3.7.0"
+  }
+}
