@@ -1,0 +1,115 @@
+/*
+ * Michael Wood's website
+ * layout.css
+ */
+
+/* sections */
+.section {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1em 0 1em;
+}
+.section-content {
+    width: 1000px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+}
+.section-content > .half-col {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    height: 100px;
+}
+
+/* view pager */
+ul.viewpager-list {
+    list-style: none;
+    display: block;
+    margin: 1em 0 1em;
+    padding: 0;
+}
+ul.viewpager-list > li {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    min-width: 100px;
+}
+ul.viewpager-list > li > a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5em;
+    display: block;
+}
+ul.viewpager-list > li > a:hover {
+    background: #ccc;
+}
+
+/* post list */
+ul.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+ul.post-list > li {
+    min-height: 3em;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #ffffff;
+    cursor: pointer;
+}
+ul.post-list > li:hover {
+    background: #e0e0e0;
+}
+
+ul.post-list > li > .post-title,
+ul.post-list > li > .post-subtitle {
+    margin: 0.4em;
+}
+ul.post-list > li > .post-title {
+    font-size: 2em;
+}
+
+ul.post-list > li:first-child {
+    border-top: 0px;
+}
+ul.post-list > li:last-child {
+    border-bottom: 0px;
+}
+
+.padded-content {
+    margin: 1em;
+}
+img.img-responsive {
+    width: 100%;
+}
+
+/* clearfix hack (I don't like this -- let's try to eliminate it)*/
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

@@ -1,0 +1,18 @@
+/*
+ * Michael Wood's website
+ * colors.css
+ */
+
+html, body {
+    background-color: #f0f0f0;
+}
+
+.section-content {
+    /*
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    */
+}
+
+.section-content > .half-col {
+}
